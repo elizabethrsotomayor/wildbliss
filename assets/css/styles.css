@@ -1,0 +1,179 @@
+/*****************************************************************************/
+/* CSS RESET STYLES */
+/*****************************************************************************/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    width: 100%;
+    font-family: 'Crimson Text', sans-serif;
+    height: 100vh;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*****************************************************************************/
+/* GENERAL STYLES */
+/*****************************************************************************/
+
+.wb-logo {
+    width: 30rem;
+}
+.navigation {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link {
+    margin-bottom: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #615A5C;
+    text-transform: uppercase;
+}
+
+.main-content {
+    display: flex;
+    height: 100vh;
+}
+
+.main-img {
+    height: 100vh;
+}
+
+.navbar {
+    background-color: #EEECE9;
+}
+
+.heading {
+    position: absolute;
+    right: 10rem;
+    top: 10rem;
+}
+
+.main-heading {
+    color: #EEECE9;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+.subheading {
+    color: #EEECE9;
+    font-size: 1.2rem;
+}
+
+.socials {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    gap:2rem;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+}
+
+.social-icons {
+    height: 2rem;
+    display: block;
+}
+
+#shadowBox {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black w/opacity/see-through */
+    border: 3px solid;
+}
+
+.rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-left: 0.5rem;
+}
+
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+/* crimson-text-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/crimson-text-v19-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* crimson-text-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/crimson-text-v19-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/**Palette: https://coolors.co/palette/9f8d91-e6dedd-615a5c-eeece9-f7d9e1 */
+/* Fonts: crimson text, belleza */
