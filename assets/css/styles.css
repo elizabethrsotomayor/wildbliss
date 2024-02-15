@@ -15,7 +15,6 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     padding: 0;
-    font-family: 'Arial', sans-serif;
     margin: 0;
     width: 100%;
     font-family: 'Crimson Text', sans-serif;
@@ -51,19 +50,6 @@ h6 {
 /*****************************************************************************/
 /* GENERAL STYLES */
 /*****************************************************************************/
-
-.wb-logo {
-    width: 30rem;
-}
-.navigation {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-}
-
-.nav-link {
-    margin-bottom: 2rem;
-}
 
 a {
     text-decoration: none;
@@ -177,3 +163,35 @@ a {
 
 /**Palette: https://coolors.co/palette/9f8d91-e6dedd-615a5c-eeece9-f7d9e1 */
 /* Fonts: crimson text, belleza */
+
+/*****************************************************************************/
+/* DESKTOP STYLES */
+/*****************************************************************************/
+@media (min-width: 60rem) {
+    .wb-logo {
+            width: 30rem;
+    }
+    .navigation {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+    }
+    
+    .nav-link {
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+    }
+}
+
+/*****************************************************************************/
+/* MOBILE STYLES */
+/*****************************************************************************/
+@media (min-width: 23rem) and (max-width: 60rem) {
+    .navbar {
+        display: flex;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+}
