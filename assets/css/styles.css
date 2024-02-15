@@ -57,34 +57,13 @@ a {
     text-transform: uppercase;
 }
 
-.main-content {
-    display: flex;
-    height: 100vh;
-}
-
 .main-img {
     height: 100vh;
 }
 
-.navbar {
+.nav-container {
     background-color: #EEECE9;
-}
-
-.heading {
-    position: absolute;
-    right: 10rem;
-    top: 10rem;
-}
-
-.main-heading {
-    color: #EEECE9;
-    letter-spacing: 0.3rem;
-    text-transform: uppercase;
-}
-
-.subheading {
-    color: #EEECE9;
-    font-size: 1.2rem;
+    padding: 0;
 }
 
 .socials {
@@ -169,25 +148,47 @@ a {
 /*****************************************************************************/
 @media (min-width: 60rem) {
     .wb-logo {
-            width: 30rem;
+        width: 30rem;
     }
     .navigation {
-            list-style-type: none;
-            display: flex;
-            flex-direction: column;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
     }
     
     .nav-link {
-            margin-bottom: 2rem;
-            font-size: 1.2rem;
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
     }
+
+    .main-content {
+        display: flex;
+        height: 100vh;
+    }
+
+        .heading {
+            position: absolute;
+            right: 3rem;
+            top: 10rem;
+        }
+    
+        .main-heading {
+            color: #EEECE9;
+            letter-spacing: 0.3rem;
+            text-transform: uppercase;
+        }
+    
+        .subheading {
+            color: #EEECE9;
+            font-size: 1.2rem;
+        }
 }
 
 /*****************************************************************************/
 /* MOBILE STYLES */
 /*****************************************************************************/
 @media (min-width: 23rem) and (max-width: 60rem) {
-    .navbar {
+    .nav-container {
         display: flex;
     }
 
