@@ -163,6 +163,8 @@ a {
     .navbar {
         flex-direction: column;
         background-color: #EEECE9;
+        padding: 0;
+        align-items: flex-start;
     }
 
     .navbar-collapse {
@@ -171,6 +173,7 @@ a {
 
     .navbar-nav {
         flex-direction: column !important;
+        margin-left: 2rem;
     }
 
     .main-content {
@@ -180,7 +183,7 @@ a {
 
     .heading {
         position: absolute;
-        right: 3rem;
+        right: 2rem;
         top: 13rem;
     }
     
@@ -194,7 +197,8 @@ a {
     .subheading {
         color: #EEECE9;
         font-size: 1.2rem;
-        margin-left: 5rem;
+        margin-left: 4.5rem;
+        letter-spacing: 0.1rem;
     }
 }
 
