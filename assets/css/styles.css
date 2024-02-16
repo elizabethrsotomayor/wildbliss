@@ -76,6 +76,10 @@ a {
     display: block;
 }
 
+.main-heading, .subheading {
+    color: white;
+}
+
 #shadowBox {
     background-color: rgb(0, 0, 0);
     /* Fallback color */
@@ -207,7 +211,17 @@ a {
 /*****************************************************************************/
 @media (min-width: 23rem) and (max-width: 60rem) {
     .wb-logo {
-        width: 12rem;
+        width: 10rem;
+    }
+
+    .heading {
+        position: absolute;
+        top: 20rem;
+        left: 11rem;
+    }
+
+    .main-heading {
+        letter-spacing: 0.2rem;
     }
 
     .navbar-custom {
@@ -216,6 +230,10 @@ a {
 
     .main-content {
         flex-direction: column;
+    }
+
+    .main-img {
+        width: 100%;
     }
 
     .socials {
