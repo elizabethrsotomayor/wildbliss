@@ -61,11 +61,6 @@ a {
     height: 100vh;
 }
 
-.nav-container {
-    background-color: #EEECE9;
-    padding: 0;
-}
-
 .socials {
     position: absolute;
     bottom: 0;
@@ -149,16 +144,33 @@ a {
 @media (min-width: 60rem) {
     .wb-logo {
         width: 30rem;
+        margin-bottom: 0;
     }
+
     .navigation {
         list-style-type: none;
         display: flex;
         flex-direction: column;
     }
     
-    .nav-link {
-        margin-bottom: 2rem;
+    .nav-item {
+        margin-left: 0;
+        margin-bottom: 1rem;
         font-size: 1.2rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        background-color: #EEECE9;
+    }
+
+    .navbar-collapse {
+        margin-top: -5rem !important;
+    }
+
+    .navbar-nav {
+        flex-direction: column !important;
     }
 
     .main-content {
@@ -166,33 +178,43 @@ a {
         height: 100vh;
     }
 
-        .heading {
-            position: absolute;
-            right: 3rem;
-            top: 10rem;
-        }
+    .heading {
+        position: absolute;
+        right: 3rem;
+        top: 13rem;
+    }
     
-        .main-heading {
-            color: #EEECE9;
-            letter-spacing: 0.3rem;
-            text-transform: uppercase;
-        }
+    .main-heading {
+        color: #EEECE9;
+        letter-spacing: 0.5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
     
-        .subheading {
-            color: #EEECE9;
-            font-size: 1.2rem;
-        }
+    .subheading {
+        color: #EEECE9;
+        font-size: 1.2rem;
+        margin-left: 5rem;
+    }
 }
 
 /*****************************************************************************/
 /* MOBILE STYLES */
 /*****************************************************************************/
 @media (min-width: 23rem) and (max-width: 60rem) {
-    .nav-container {
-        display: flex;
+    .wb-logo {
+        width: 12rem;
+    }
+
+    .navbar-custom {
+        background-color: #EEECE9;
     }
 
     .main-content {
         flex-direction: column;
+    }
+
+    .socials {
+        display: none;
     }
 }

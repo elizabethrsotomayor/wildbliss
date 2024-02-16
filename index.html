@@ -12,21 +12,35 @@
 <body>
     <main role="main">
         <div class="main-content">
-            <div class="nav-container">
-                <nav role="navigation">
-                    <img src="assets/images/wild-bliss-logo.png" alt="Wild Bliss Collective" class="wb-logo">
-                    <ul class="navigation">
-                        <li class="nav-link"><a href="#">Home</a></li>
-                        <li class="nav-link"><a href="#">About</a></li>
-                        <li class="nav-link"><a href="#">Gallery</a></li>
-                        <li class="nav-link"><a href="#">Contact</a></li>
+
+            <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+                <a class="navbar-brand" href="#"><img src="assets/images/wild-bliss-logo.png" alt="Wild Bliss Collective" class="wb-logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link nav-item" href="#">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-item" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-item" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-item" href="#">Contact</a>
+                        </li>
                     </ul>
                     <div class="socials">
                         <img src="assets/icons/etsy.png" alt="Etsy" class="social-icons">
                         <img src="assets/icons/instagram.png" alt="Instagram" class="social-icons">
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
             <div class="content">
                 <div class="heading shadowbox">
                     <h1 class="main-heading">Wild Bliss Collective</h1>
@@ -46,5 +60,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
