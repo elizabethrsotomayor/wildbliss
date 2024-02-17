@@ -1,24 +1,16 @@
 'use strict';
-  window.addEventListener("resize", function() {
-  var w = window.innerWidth;
-  console.log(w)
-  var responsiveDiv = document.querySelectorAll('.responsive');
+// $("#home, #about, #gallery, #contact").click(function(){
 
-responsiveDiv.forEach((element) => {
-console.log(element)
- if(w < 700) {
-        element.classList.remove("desktop");
-        element.classList.add("mobile");
-        console.log("desktop Remove");
-      } else {
-      element.classList.remove("mobile");
-       element.classList.add("desktop");
-       
-        console.log("mobile removed");
-      } 
+//   //$(".nav navbar-nav li") <-this is looking for a <li> inside a <navbar-nav>  
+//   // tag inside a tag with the class "nav"
 
-})
-
-     
-      
-    });
+//   $(".nav.navbar-nav li").removeClass("active");
+//   $(this).addClass("active");
+// });
+console.log("connected");
+$(document).ready(function() {
+    $.each($('#navbar').find('li'), function() {
+        $(this).toggleClass('active', 
+            window.location.pathname.indexOf($(this).find('a').attr('href')) > -1);
+    }); 
+});

@@ -77,7 +77,11 @@ a {
 }
 
 .main-heading, .subheading {
-    color: white;
+    color: #EEECE9;
+}
+
+.main-heading {
+    text-transform: uppercase;
 }
 
 #shadowBox {
@@ -192,14 +196,12 @@ a {
     }
     
     .main-heading {
-        color: #EEECE9;
         letter-spacing: 0.5rem;
         text-transform: uppercase;
         font-weight: 600;
     }
     
     .subheading {
-        color: #EEECE9;
         font-size: 1.2rem;
         margin-left: 4.5rem;
         letter-spacing: 0.1rem;
@@ -217,11 +219,11 @@ a {
     .heading {
         position: absolute;
         top: 20rem;
-        left: 11rem;
+        left: 4rem;
     }
 
     .main-heading {
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.5rem;
     }
 
     .navbar-custom {
@@ -233,7 +235,7 @@ a {
     }
 
     .main-img {
-        width: 100%;
+        max-width: 100%;
     }
 
     .socials {
