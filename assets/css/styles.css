@@ -293,13 +293,21 @@ a {
         height: 30rem;
     }
 
+    .gallery-box {
+        height: 33rem;
+            width: 30rem;
+    }
+
         .gallery-box, .contact-box {
             position: absolute;
             top: 10rem;
             left: 50%;
-            height: 33rem;
-            width: 30rem;
         }
+
+    .contact-box {
+        height: 40rem;
+        width: 30rem
+    }
 }
 
 /*****************************************************************************/

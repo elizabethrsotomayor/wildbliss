@@ -54,14 +54,18 @@
                         <h1 class="contact-heading">Contact</h1>
                         <span class="contact-subheading">let's get in touch!</span>
                     </div>
-                    <form action="">
+                    <form class="gform" method="POST" data-email="wildblisscollective@gmail.com" action="https://script.google.com/macros/s/AKfycbzbhNuFVS4tkdWNLJGh0XC5xZdkX6maG3S_SG7VznvaCMVQYaleR4j38iUopdu27OI/exec">
                         <div class="form-group">
                             <label for="FormControlInputName">Name</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="FormControlInputName">Email</label>
+                            <input type="email" class="form-control" name="email" required>
                         </div>
                         <div class="form-group">
                             <label for="FormControlInputSelect">How did you hear about us?</label>
-                            <select class="form-control" name="" id="FormControlSelect">
+                            <select class="form-control" name="howheard" id="FormControlSelect">
                                 <option>Google Search</option>
                                 <option>Etsy</option>
                                 <option>Instagram</option>
@@ -70,11 +74,15 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Message</label>
-                            <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+                            <textarea class="form-control" id="FormControlTextarea1" rows="3" name="message" required></textarea>
                         </div>
                         <div class="row justify-content-center">
-
                             <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                        </div>
+                        <div style="display:none" class="thankyou_message">
+                            <!-- You can customize the thankyou message by editing the code below -->
+                            <h2><em>Thanks</em> for contacting us! We will get back to you soon!
+                            </h2>
                         </div>
                     </form>
                 </div>
@@ -91,6 +99,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script data-cfasync="false" type="text/javascript" src="assets/js/form-submission-handler.js"></script>
 </body>
 
 </html>
