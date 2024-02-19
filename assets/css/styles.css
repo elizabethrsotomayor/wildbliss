@@ -156,9 +156,12 @@ a {
 }
 
 .gallery-box {
-    height: 35rem;
-    width: 30rem;
     background-color: #615A5C;
+}
+
+.contact-box {
+    background-color: #EEECE9;
+    padding: 1.5rem;
 }
 
 .gallery-heading, .gallery-subheading {
@@ -166,8 +169,21 @@ a {
     letter-spacing: 0.1rem;
 }
 
-.gallery-headings {
+.contact-heading, .contact-subheading {
+    color: #615A5C;
+    letter-spacing: 0.1rem;
+}
+
+.contact-heading {
+    text-transform: uppercase;
+}
+
+.gallery-headings, .contact-headings {
     text-align: center;
+}
+
+.contact-headings {
+    margin: 1rem;
 }
 
 
@@ -277,10 +293,12 @@ a {
         height: 30rem;
     }
 
-        .gallery-box {
+        .gallery-box, .contact-box {
             position: absolute;
             top: 10rem;
             left: 50%;
+            height: 33rem;
+            width: 30rem;
         }
 }
 
