@@ -351,6 +351,23 @@ a {
         height: 50rem;
     }
 
+    .about-text {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .about-heading, .about-subheading {
+        text-align: center;
+    }
+
+        .about-subheading {
+            display: block;
+        }
+
+    .elizabeth-img {
+        height: 40rem;
+    }
+
     .about-img {
         max-width: 100%;
         object-fit: cover;
